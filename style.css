@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.gallery {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery .item {
+    height: 100px;
+
+    background-color: #0f6e56;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+.gallery .item:first-child {
+    grid-column: 1 / 3;
+    background-color: #c46a1f;
+}
+.gallery .item:nth-child(7) {
+    grid-column: 2 / 4;
+    background-color: #c46a1f;
+}
